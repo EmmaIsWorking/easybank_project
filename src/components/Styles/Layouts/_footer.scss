@@ -1,0 +1,22 @@
+.Footer {
+	@include flexBox();
+	background-color: $darkBlue;
+}
+
+.Footer__container {
+	width: 100%;
+	max-width: $maxWithLayout;
+	@include grid((1fr 3fr 1fr));
+	padding: $padding6 $padding4;
+}
+.Footer__container__menu {
+	@include grid((repeat(3, 1fr)));
+}
+.Footer__container_requestBtn {
+	text-align: end;
+}
+
+.Footer__container_requestBtn p {
+	margin: $margin3 0;
+	font-size: $fontSmall;
+}

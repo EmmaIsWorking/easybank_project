@@ -1,0 +1,35 @@
+.Feature {
+	background-color: $lightGrayishBlue;
+	@include flexBox();
+}
+
+.Feature__Container {
+	flex-direction: column;
+	max-width: $maxWithLayout;
+	padding: $padding5 $padding4;
+}
+
+.Feature__Container__header {
+	max-width: 50%;
+}
+
+.Feature__Container_ArticulesContainer {
+	@include grid((repeat(4, 1fr)));
+	padding: $padding5 0;
+}
+
+//Articule
+
+.FeatureArticleContainer {
+	padding: $padding4 $padding3;
+}
+.FeatureArticleContainer__Img {
+	margin: $margin3;
+}
+// .ArticleContainer__Description {
+// }
+// .ArticleContainer__Description h3 {
+// }
+.FeatureArticleContainer__Description p {
+	font-size: $fontSmall;
+}

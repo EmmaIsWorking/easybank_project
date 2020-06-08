@@ -1,0 +1,44 @@
+p,
+a {
+	@include font;
+	font-size: $fontSize;
+}
+
+//Titles
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	@include font($boldFont, $darkBlue);
+}
+
+h1 {
+	font-size: $fontSize * 2.5;
+}
+h2 {
+	font-size: $fontSize * 1.5;
+	margin: $margin2 0;
+}
+h3 {
+	font-size: $fontSize * 1.25;
+	margin: $margin2 0;
+}
+h4 {
+	font-size: $fontSize * 1.12;
+}
+h5 {
+	font-size: $fontSize * 1.1;
+}
+h6 {
+	font-size: $fontSize * 0.7;
+}
+
+ul,
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}

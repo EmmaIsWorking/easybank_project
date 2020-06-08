@@ -1,0 +1,46 @@
+// Primary colors
+$darkBlue: hsl(233, 26%, 24%);
+$limeGreen: hsl(136, 65%, 51%);
+$brightCyan: hsl(192, 70%, 51%);
+
+// Neutral colors
+$grayishBlue: hsl(233, 8%, 62%);
+$lightGrayishBlue: hsl(220, 16%, 96%);
+$veryLightGray: hsl(0, 0%, 98%);
+$white: hsl(0, 0%, 100%);
+
+// Fonts
+$font: 'Public Sans', sans-serif;
+$fontSize: 18px;
+$fontSmall: $fontSize * 0.8;
+$lightFont: 300;
+$boldFont: 400;
+
+//margin
+$margin1: 8px;
+$margin2: $margin1 * 1.2;
+$margin3: $margin1 * 1.5;
+$margin4: $margin1 * 2;
+$margin5: $margin1 * 5;
+
+//padding
+
+$padding1: 8px;
+$padding2: $padding1 * 1.2;
+$padding3: $padding1 * 1.5;
+$padding4: $padding1 * 2;
+$padding5: $padding1 * 5;
+$padding6: $padding1 * 8;
+
+//Btn
+
+$btnHeight: 40px;
+$btnWidth: 140px;
+
+//Border Radius
+$borderRadius: 22px;
+$borderRadius_Articules: 8px 8px 0 0;
+
+//sizes Container
+
+$maxWithLayout: 1142px;

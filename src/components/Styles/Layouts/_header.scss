@@ -1,0 +1,31 @@
+.Header {
+	@include flexBox();
+	position: relative;
+	z-index: 5;
+	height: 55px;
+	background-color: $white;
+}
+
+.Header__container {
+	@include grid((1fr 6fr 1fr));
+	max-width: $maxWithLayout;
+	padding: $padding4;
+}
+
+.Header__container__logoContainer {
+	@include flexBox();
+}
+
+.Nav_container {
+	@include flexBox();
+}
+.BtnContainer {
+	@include flexBox();
+}
+ul > li {
+	margin: $margin1;
+}
+
+.Modal{
+	display: none;
+}

@@ -1,0 +1,27 @@
+//* Fonts
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap');
+
+//* Utilities
+@import './Utilities/variables';
+@import './Utilities/mixins';
+
+//* Bases
+@import './Base/typography';
+
+//* Components
+@import './Components/buttons';
+@import './Components/icons';
+@import './Components/modal';
+
+//* Layouts
+@import './Layouts/body';
+@import './Layouts/header';
+@import './Layouts/hero';
+@import './Layouts/feature';
+@import './Layouts/articles';
+@import './Layouts/footer';
+
+//* Media Queries
+
+@import './MediaQueries/tablet';
+@import './MediaQueries/movil';

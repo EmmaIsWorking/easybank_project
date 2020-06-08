@@ -1,0 +1,99 @@
+@media (max-width: 768px) {
+	//*header
+	.Header__container {
+		@include grid(3fr 1fr);
+		margin: 0 $margin1;
+	}
+	.Header__container__logoContainer {
+		justify-content: start;
+	}
+	.BtnContainer {
+		display: none;
+	}
+
+	//*Main
+	.Main {
+		@include flexBox();
+	}
+	.Main__container {
+		@include grid((40% 60%));
+	}
+	.Main__container__boxImage{
+		height: 200%;
+	}
+	.IntroBanner {
+		left: 250px;
+	}
+
+	.IntroBanner img {
+		width: 800px;
+	}
+
+	.ImgMockup {
+		left: 340px;
+	}
+
+	.ImgMockup img {
+		width: 520px;
+	}
+
+	//* Features
+
+	.Feature__Container {
+		margin: $margin5 $margin4;
+	}
+
+	.Feature__Container__header {
+		@include flexBoxColum();
+		max-width: 100%;
+		text-align: center;
+	}
+	.Feature__Container_ArticulesContainer {
+		@include grid((repeat(2, 1fr)));
+	}
+
+	.FeatureArticleContainer {
+		@include flexBoxColum();
+	}
+
+	.FeatureArticleContainer__Description {
+		@include flexBoxColum();
+		text-align: center;
+	}
+
+	//* Articules
+	.Articles__container {
+		margin: 0 $margin4;
+	}
+
+	.Articles__header {
+		margin: $margin5;
+	}
+
+	.Articles__container__posts {
+		@include grid((repeat(2, 1fr)));
+	}
+
+	.Articles__header {
+		@include flexBoxColum();
+	}
+
+	.ArticleContainer__img img {
+		height: 200px;
+	}
+
+	//* Footer
+
+	.Footer__container {
+		margin: 0 $margin4;
+	}
+	.Footer__container__menu {
+		@include grid((1fr 1fr));
+		@include flexBox();
+	}
+
+	.Footer__container__menu ul {
+		@include flexBoxColum();
+		margin: 0 $margin4;
+	}
+}

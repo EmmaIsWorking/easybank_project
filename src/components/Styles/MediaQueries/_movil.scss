@@ -1,0 +1,98 @@
+@media (max-width: 425px) {
+	//* Header
+
+	.Header {
+		width: 100vw;
+		background-color: white;
+	}
+	.Header__container {
+		@include grid((1fr 100px));
+		width: 100%;
+	}
+	.Header__container__navContainer {
+		display: none;
+	}
+
+	//* Modal
+	.Modal{
+		display: initial;
+	}
+	.Nav_container {
+
+		flex-direction: column;
+	}
+	.Nav_container a{
+		color: $darkBlue;
+	}
+
+	//* Main
+	//?intro banner
+	.desktopBanner {
+		display: none;
+	}
+	.movilBanner {
+		display: block;
+	}
+	//? End
+
+	.Main__container {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+	.Main__container__boxDescription {
+		grid-row: 2;
+		height: auto;
+		align-items: center;
+		margin: $margin4 0;
+		text-align: center;
+	}
+
+	.IntroBanner {
+		left: 0px;
+		top: 60px;
+	}
+	.IntroBanner img {
+		width: 425px;
+	}
+	.ImgMockup {
+		display: flex;
+		left: 0;
+		top: 27px;
+		justify-content: center;
+	}
+	.ImgMockup img {
+		width: 360px;
+	}
+
+	//* Feature
+	.Feature__Container_ArticulesContainer {
+		grid-template-columns: 1fr;
+	}
+	//* Articles
+
+	.Articles__container__posts {
+		grid-template-columns: 1fr;
+	}
+
+	//* Footer
+	.Footer__container {
+		@include flexBoxColum();
+		grid-template-columns: 1fr;
+		padding: $padding3 0;
+	}
+
+	.Footer__container__LogosContainer {
+		@include flexBoxColum();
+	}
+	.socialMedia img {
+		width: 28px;
+	}
+
+	.Footer__container__menu {
+		@include flexBoxColum();
+		margin: $margin4;
+	}
+	.Footer__container_requestBtn {
+		text-align: center;
+	}
+}

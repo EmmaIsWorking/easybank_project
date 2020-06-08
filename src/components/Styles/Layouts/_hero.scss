@@ -1,0 +1,62 @@
+.Main {
+	@include flexBox(center, flex-end);
+	background-color: $veryLightGray;
+}
+.Main__container {
+	@include grid((3fr 5fr));
+	width: 89%;
+	justify-items: end;
+}
+// Description
+.Main__container__boxDescription {
+	@include flexBox(start, center);
+	flex-direction: column;
+	height: 495px;
+}
+
+.Main__container__boxDescription h1 {
+	margin: $margin3 0;
+}
+.Main__container__boxDescription p {
+	margin: $margin3 0;
+}
+.Main__container__boxDescription .btn {
+	margin: $margin3 0;
+}
+
+//imageCover
+.Main__container__boxImage {
+	position: absolute;
+	overflow: hidden;
+	top: -100px;
+	width: 100%;
+	height: 200%;
+	object-fit: cover;
+	left: 0px;
+}
+
+.IntroBanner {
+	position: absolute;
+	z-index: 0;
+	left: 50%;
+	top: -27px;
+}
+.IntroBanner img {
+	width: 900px;
+	object-fit: cover;
+}
+
+.ImgMockup {
+	position: relative;
+	z-index: 0;
+	left: 930px;
+	top: 65px;
+}
+
+.ImgMockup img {
+	width: 560px;
+}
+
+.movilBanner {
+	display: none;
+}

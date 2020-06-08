@@ -1,0 +1,27 @@
+.modal {
+	position: absolute;
+	z-index: 4;
+	top: 70px;
+	left: 20px;
+	right: 20px;
+	bottom: 40px;
+	border-radius: 8px;
+	padding: $padding5;
+	box-shadow: -1px -23px 135px 63px rgba(36, 44, 80, 0.952);
+	background-color: $white;
+	outline:0px;
+}
+
+.Modal img{
+	text-align: end;
+}
+
+
+.overlayModal {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	border-bottom: 8px;
+}

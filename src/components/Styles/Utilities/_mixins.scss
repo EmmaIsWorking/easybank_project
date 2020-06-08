@@ -1,0 +1,38 @@
+// Display
+@mixin flexBox($align: center, $justify: center) {
+	display: flex;
+	align-items: $align;
+	justify-content: $justify;
+}
+
+@mixin flexBoxColum {
+	@include flexBox();
+	flex-direction: column;
+}
+
+@mixin grid($columns) {
+	display: grid;
+	grid-template-columns: $columns;
+}
+
+//color
+@mixin gradient($color1: $limeGreen, $color2: $brightCyan) {
+	background: linear-gradient(90deg, $color1, $color2);
+}
+
+//typographics
+@mixin font($weight: $lightFont, $color: $grayishBlue, $font: $font) {
+	color: $color;
+	font-family: $font;
+	font-weight: $weight;
+}
+
+//Btn
+@mixin btn($height: $btnHeight, $width: $btnWidth) {
+	width: $width;
+	height: $height;
+	padding: $padding2 $padding2 * 2;
+	border: 0px solid;
+	border-radius: $borderRadius;
+	color: $white;
+}
